@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS\custom.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel = "icon" href = "media/mainmedia/logo.png" type = "image/x-icon">
+  <script src="https://kit.fontawesome.com/e11c3ef481.js" crossorigin="anonymous"></script>
+  <title>Bootstrap</title>
+</head>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-4 navbar-dark">
+
+  <a class="navbar-brand" href="index.html">
+    <img src="media/mainmedia/logo.png" width="50" height="50" alt="A logo"> Rosalie</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="om-meg.html">Omg meg</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portefolje.html">Portefølje</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+<!--end navbar-->
+
+<!--empty container-->
+<div class="container-fluid bg-5"></div>
+
+<!-- Section 1 -->
+<section class="container-fluid bg-1 ">
+  <header class="container-fluid ">
+    <h1 class="text-center">Hva er bootstrap?</h1>
+    <div class="row justify-content-md-center">
+
+
+      <p class="col-md-6">
+        Bootstrap er et rammeverk som brukes til å bygge responsive nettsider, som fokuserer på mobilt layout.<br>
+        Den ble oppfunnet hos Twitter i 2010 av Mark Otto og Jacob Thornton, og gjort offentlig i 2011.<br>
+        Bootstrap er en ferdiglaget samling av HTML og CSS elementer som gjør det enklere for webutviklere å bygge en
+        nettside.<br>
+        Det som gjør Bootstrap lett å bruke er at den bruker et byggekloss-system for å dele inn nettsidens layout. <br>
+        Bootstraps byggeklosser består av 12 kolonner som deler opp nettsidens oppbygg. Disse byggeklossene kalles for
+        rutenett. </p>
+
+
+    </div>
+  </header>
+</section>
+<!-- Section 1 end -->
+
+<!--empty container-->
+<div class="container-fluid bg-5"></div>
+
+
+<!-- Section 2 -->
+<section class="container-fluid bg-1">
+  <header class="container-fluid text-center">
+    <h1>Hvordan fungerer Bootstraps rutenett?</h1>
+
+
+
+    <p>
+      Boostraps rutenett støtter seks responsive bruddpunkter. Bruddpunktene til Bootstrap er:
+    </p>
+  </header>
+  <!--list-->
+  <section class="shadow p-3 mb-5 bg-body rounded container-sm bg-1 text-center margin w-50">
+    <article class="col-md-auto">
+      <ul class="list-group font-dark">
+        <li class="list-group-item">Extra small (xs)</li>
+        <li class="list-group-item">Small (sm)</li>
+        <li class="list-group-item">Medium (md)</li>
+        <li class="list-group-item">Large (lg)</li>
+        <li class="list-group-item">Extra large (xl)</li>
+        <li class="list-group-item">Extra extra large (xxl)</li>
+      </ul>
+    </article>
+  </section>
+</section>
+<!-- Section 2 end-->
+<!-- Section 3 -->
+
+<h4 class="text-center bg-1">
+  Se tabellen for en lett oversikt over bruddpunktene:</h4>
+<div class="table-responsive">
+  <table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col">xs
+          &lt576px
+        </th>
+        <th scope="col">sm
+          ≥576px
+        </th>
+        <th scope="col">md
+          ≥768px
+        </th>
+        <th scope="col">lg
+          ≥992px
+        </th>
+        <th scope="col">xl
+          ≥1200px
+        </th>
+        <th scope="col">xxl
+          ≥1400px
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Beholder [max-width]</td>
+        <td>Ingen (auto)</td>
+        <td>540px</td>
+        <td>720px</td>
+        <td>960px</td>
+        <td>1140px</td>
+        <td>1320px</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Klasse prefiks</td>
+        <td>col-</td>
+        <td>col-sm-</td>
+        <td>col-md-</td>
+        <td>col-lg-</td>
+        <td>col-xl</td>
+        <td>col-xxl</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Antall kolonner</td>
+        <td>12</td>
+        <td>12</td>
+        <td>12</td>
+        <td>12</td>
+        <td>12</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+</section>
+<!-- Section 3 end -->
+<!--Section 4-->
+<section class="container-fluid bg-1 ">
+  <header class="container-fluid ">
+
+    <div class="row justify-content-md-center">
+
+
+      <p class="col-md-6">
+        Du kan kontrollere størrelsen av beholdere ved hjelp av f.eks «col-md-6».<br>
+        Disse beholdere kan lett arrangeres og settes sammen i ulikt oppsett, som er visualisert av bildet nedenfor.<br><br>
+        Ved bruk av «row»-klassen kan man skape horisontale grupper av kolonner. Hvis man setter mer enn tolv kolonner i
+        en «row»,
+        så vil hver gruppe av ekstra kolonner hoppe på en ny linje som en enhet.
+
+      </p>
+      <figure class="figure text-center">
+        <img class="shadow p-3 mb-5 bg-body rounded container-fluid col-md-6" alt="Image of a bootstrap grid"
+          src="media/bootstrapmedia/grid.jpg">
+        <figcaption class="figure-caption-light "><a class=link-light
+            href="https://www.getbootstrap.com/docs/5.0/layout/grid/">Bildet hentet fra her</a></figcaption>
+      </figure>
+
+    </div>
+  </header>
+</section>
+<!--Section 4 end-->
+<!-- Section 5 -->
+<section class=" bg-2 container-fluid">
+  <header class=" text-center">
+    <h1>Din egen bootstrap nettside</h1>
+    <p>
+      Er du interessert i å prøve ut bootstrap? Her har jeg en 7 trinns guide som kan kanskje hjelpe deg.
+       Det viktigste er å prøve seg. Ikke fortvil hvis du sitter fast et sted, det finnes hundrevis av guides på nettet som kan hjelpe deg også! 
+    </p>
+
+  </header>
+  <!--list-->
+  <section class="container-sm bg-2 shadow p-3 mb-5 bg-body rounded margin ">
+    <div class="row justify-content-center">
+      <article>
+        <ul class="list-group font-dark">
+          <li class="list-group-item"> 1. Opprett deg en mappestruktur på datamaskinen din som skal innholdet nettsida
+            di.
+            Inkluder mapper som du kaller for CSS, og JS, hovedmappa skal være stedet du plasserer html filene
+            dine i.</li>
+          <li class="list-group-item"> 2. Last ned en bootstrap samling <a
+              href="https://getbootstrap.com/docs/5.0/getting-started/download/" class=link-dark> her</a> <br></li>
+          <li class="list-group-item">3. Du kan velge hvilke filer du skal bruke, men for en optimalisert nettside
+            anbefales det å bruke bootstrap.min.js og bootstrap.min.css.
+            «Min» mener at filen er minimalisert og er skrevd på bare en linje for å øke ytelsen.
+             Dette er kanskje ikke så viktig i starten, men det er en lur ting å vite om!</li>
+
+          <li class="list-group-item"> 4. Åpne hele mappen i din kodeprogramvare. 
+            Det finnes mange gratis kodeprogrammer der ute, men min personlig anbefaling er Visual Studio Code.</li>
+          <li class="list-group-item"> 5. Nå lager du deg en index.hml fil som skal være utgangspunktet til nettsida di,
+            og setter den i din hovedmappe. </li>
+          <li class="list-group-item">6. I «head» seksjonen linker du nå til de bootstrap filene, ved å bruke «link»
+            elementet.
+            Bruk relative linken til din bootstrap css, hvis du har fulgt tutorialen her så er det
+            «CSS/bootstrap.min.css»</li>
+          <li class="list-group-item"> 7. Nå er du klar til å ta i bruk Bootstrap! Vet ikke hvor du skal begynne?
+            Kanskje du kan prøve deg ut med en egen portefølje side. W3schools har en nyttig tutorial til dette, som du kan besøke ved å klikke
+            <a href="https://www.w3schools.com/howto/howto_website_create_portfolio.asp" class=link-dark> her</a> 
+          </li>
+          <img class="img-responsive " style="width:auto" alt="Illustration of a man doing tech stuff"
+            src="media/bootstrapmedia/bs.jpg">
+          <li class="list-group-item"> Bildet hentet fra <a
+              href="https://meprojectschennai.co.in/web-design-training-in-chennai/" class=link-dark>her</a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</section>
+<!-- Section 5 end-->
+
+<!-- Footer -->
+<footer class="text-center text-white bg-4">
+  <!-- Grid container -->
+  <div class="container">
+    <!-- Section: Links -->
+    <section class="mt-5">
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5">
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="om-meg.html" class="text-white">Om meg</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="portefolje.html" class="text-white">Portefølje</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="kontakt.html" class="text-white">Kontakt</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="my-5" />
+
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                Følg meg på sosiale mediene mine :)
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text end -->
+
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="https://www.facebook.com/rosalie.schriewer/" class="text-decoration-none me-4">
+            <i class="fa-brands fa-facebook-square"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rosalie-schriewer-85283621a/" class="text-decoration-none me-4">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/RosalieSchriewer" class="text-decoration-none me-4">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social end -->
+</footer>
+<!-- Footer -->
+</div>
+<!-- End of .container -->
+<title>Bootstrap</title>
+</head>
+
+</body>
+<script src="JS/bootstrap.min.js"></script>
+
+</html>

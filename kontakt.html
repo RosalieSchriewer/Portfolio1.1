@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS\custom.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel = "icon" href = "media/mainmedia/logo.png" type = "image/x-icon">
+  <script src="https://kit.fontawesome.com/e11c3ef481.js" crossorigin="anonymous"></script>
+  <title>Kontakt</title>
+</head>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-4 navbar-dark">
+
+  <a class="navbar-brand" href="index.html">
+    <img src="media/mainmedia/logo.png" width="50" height="50" alt="A logo"> Rosalie</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="om-meg.html">Om meg</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portefolje.html">Portefølje</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
+<!--empty container-->
+<div class="container-fluid bg-5"></div>
+
+<!--Contact containers-->
+<div class="container-fluid bg-1 text-center">
+  <div class="row">
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
+
+      <!--Section heading-->
+      <h2 class="h1-responsive font-weight-bold text-center my-4">Ta kontakt med meg! <i class="fa-regular fa-heart"></i></h2>
+      <!--Section description-->
+      <p class="text-center w-responsive mx-auto mb-5">Har du noen spørsmål? Bruk dette kontaktskjemaet for å sende meg
+        en melding!
+        Du kan også bare ringe meg!</p>
+
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-2"></div>
+        <div class="shadow p-3 mb-5 bg-1 rounded col-md-6 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="name" class="form-control">
+                  <label for="name" class="">Ditt navn</label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="email" class="form-control">
+                  <label for="email" class="">Din email</label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="subject" name="subject" class="form-control">
+                  <label for="subject" class="">Emne</label>
+                </div>
+              </div>
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-12">
+
+                <div class="md-form">
+                  <textarea type="text" id="message" name="message" rows="2"
+                    class="form-control md-textarea"></textarea>
+                  <label for="message">Din melding</label>
+                </div>
+
+              </div>
+            </div>
+            <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+            <a class="btn btn-secondary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+            <li><img src="media/mainmedia/map-marker-2-24.ico" alt="a map marker icon"></img>
+              <p>Åsveien 5, 4879 Grimstad</p>
+            </li>
+
+            <li><img src="media/mainmedia/phone-24.ico" alt="a phone icon"></img>
+              <p>+47 940 87 112</p>
+            </li>
+
+            <li><img src="media/mainmedia/mail-24.ico" alt="a mail icon"></img>
+              <p>rosalie.schriewer@icloud.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+      </div>
+
+    </section>
+
+  </div>
+</div>
+<!--empty container-->
+<div class="container-fluid bg-5"></div>
+
+
+<!-- Footer -->
+<footer class="text-center text-white bg-4">
+  <!-- Grid container -->
+  <div class="container">
+    <!-- Section: Links -->
+    <section class="mt-5">
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5">
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="om-meg.html" class="text-white">Om meg</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="portefolje.html" class="text-white">Portefølje</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="kontakt.html" class="text-white">Kontakt</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+
+
+        <hr class="my-5" />
+
+      <!-- Section: Text -->
+     <section class="mb-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <p>
+            Følg meg på sosiale mediene mine :)
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Text end -->
+
+    <!-- Section: Social -->
+    <section class="text-center mb-5">
+      <a href="https://www.facebook.com/rosalie.schriewer/" class="text-decoration-none me-4">
+        <i class="fa-brands fa-facebook-square"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/rosalie-schriewer-85283621a/" class="text-decoration-none me-4">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/RosalieSchriewer" class="text-decoration-none me-4">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </section>
+    <!-- Section: Social end -->
+</footer>
+<!-- Footer -->
+</div>
+<!-- End of .container -->
+<title>Bootstrap</title>
+</head>
+
+</body>
+<script src="JS/bootstrap.min.js"></script>
+
+</html>
