@@ -40,7 +40,7 @@ body {
   /*  font: 20px Montsrrat, sans-serif;
     font: 20 px Palette Mosaic, cursive;*/
   line-height: 1.8;
-  color: #f5f6f7;
+  color: #d6d6d6;
   background-image: url("/media/mainmedia/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -60,18 +60,18 @@ p {
   padding-top: 130px;
 }
 
-.bg-1 {
-  background-color: #c2a3bf;
-  /* Purple */
-  color: #ffffff;
+.bg-1, html{
+  background-color: #d6d6d6;
+  /* light grey */
+  color: #000000;
   background-size: cover;
 
 }
 
 .bg-2 {
-  background-color: #474e5d;
+  background-color: #b5c2db;
   /* Dark Blue */
-  color: #ffffff;
+  color: #000000;
 
 }
 
@@ -88,7 +88,7 @@ p {
 }
 
 .bg-5 {
-  background-color: transparent;
+  background-color: #ffffffe5;
   /* Transparent */
   color: #ffffff;
 }
